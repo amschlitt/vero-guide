@@ -25,6 +25,7 @@ table{width:100%;border-collapse:collapse;font-size:.95rem}td,th{padding:8px 6px
 
 header.photo{background:linear-gradient(180deg,rgba(8,40,44,.15) 0%,rgba(8,40,44,.72) 100%),url(pool.jpg) center/cover;min-height:300px;display:flex;align-items:flex-end;padding:0 0 26px}
 header.photo .wrap{padding:0 18px;width:100%}
+@media(min-width:900px){header.photo{background:linear-gradient(135deg,#0f766e,#14938a);display:grid;grid-template-columns:1fr 1fr;align-items:stretch;min-height:440px;padding:0}header.photo .wrap{align-self:center;width:auto;max-width:560px;margin:0 0 0 auto;padding:0 44px}header.photo::after{content:"";grid-column:2;grid-row:1;background:url(pool.jpg) center/cover}}
 .menu{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:14px 0}
 .menu a{display:block;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-family:system-ui,sans-serif}
 .menu a b{display:block;color:var(--accent);font-size:1.05rem;margin-bottom:3px}
